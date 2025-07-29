@@ -1,37 +1,53 @@
-# Wellness Session Manager App
+# 🧘 Wellness Session Manager App
 
-A full-stack web app to manage wellness sessions with secure authentication, session tracking, and CRUD features. Built as part of a company assignment using **React**, **Firebase Auth**, and **Firestore**.
-
----
-
-## Features
-
- **User Authentication** (Firebase Auth)
-  - Login & Logout
-  - Private route protection
-
-   **Session Management (CRUD)**
-  - Add, view, update, and delete session notes
-  - Each session includes a title, notes, and date
-  - Sessions are linked to the logged-in user
-
-   **Persistent Storage**
-  - All data stored in Firebase Firestore
-  - Real-time sync
-
--  **Clean UI & Functional Dashboard**
-  - Simple layout with welcome message
-  - Intuitive session form and session list
-  - Logout button
+A full-stack web application that allows users to log in, manage personal wellness session notes, and view them securely.
 
 ---
 
-# Tech Stack
+## ✨ Features
 
-- **Frontend**: React (Vite/CRA), React Router
-- **Authentication**: Firebase Authentication
-- **Database**: Firebase Firestore
-- **State Management**: React Context API
+- 🔐 User Authentication (Firebase)
+- 📅 Add, View, and Manage Wellness Sessions
+- ☁️ Real-time data with Firebase Firestore
+- 🪪 JWT-Based Protected Routes
+- 🖥️ React Frontend + Firebase Backend
+- 💾 Auto-Save + Session CRUD (Create, Read, Update, Delete)
+- 🔒 Secure Login & Logout flow
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React, React Router, Tailwind CSS
+- **Backend:** Firebase Authentication & Firestore
+- **Auth:** JWT tokens, Context API
+
+---
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login](./login.png)
+
+### 📋 Dashboard View
+![Dashboard](./dashboard.png)
+
+### 🗂️ Sessions Added
+![Sessions](./sessions.png)
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/wellness-session-app.git
+cd wellness-session-app/client
+npm install
+VITE_FIREBASE_API_KEY=A8FL9EKPoWhelwzzGBpdbASq0MGvIFHPo
+VITE_FIREBASE_AUTH_DOMAIN=...
+...
+npm start
 
 ##  Project Structure
 client/
@@ -44,39 +60,11 @@ client/
 │ │ └── AuthContext.js
 │ ├── App.js
 │ ├── index.j
-## How to Run Locally
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/srilakshmi1725/welness-session-app.git
-   cd welness-session-app
-   Inside src/firebase.js, paste your Firebase credentials:
-2. **Sorce Code**
-import { initializeApp } from "firebase/app";
-const firebaseConfig = {
-  apiKey: "KEY",
-  authDomain: "APP.firebaseapp.com",
-  projectId: "PROJECT_ID",
-  // ... rest
-};
-export const app = initializeApp(firebaseConfig);
-
-## Run the app
-
-npm start
-##  Screenshots
-
-###  Login Page
-![Login](./login.png)
-
-###  Dashboard View
-![Dashboard](./dashboard.png)
-
-###  Sessions Added
-![Sessions](./sessions.png)
-
-
-Contact
+ Author
 Srilakshmi Parise
+
+ License
+This project is licensed under the MIT License.
+
 srilakshmiparise225@gmail.com
 https://www/linkedin.com/parisesrilakshmi1725
